@@ -12,7 +12,7 @@ rocketchat:
 #    - ./uploads:/app/uploads
   environment:
     - PORT=3000
-    - ROOT_URL=http://192.168.99.100/rocket/
+    - ROOT_URL=http://192.168.99.100/test/rocket/
     - MONGO_URL=mongodb://mongo:27017/rocketchat
 # uncomment and set the line below if you need to support mobile apps
 #   - DDP_DEFAULT_CONNECTION_URL=http://yourhost:3000
