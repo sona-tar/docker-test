@@ -3,8 +3,8 @@ app:
   container_name: proxy
   ports:
     - 80:80
-  external_links:
-    - storage
+  #external_links:
+  #  - storage
   #  - rocketchat
   volumes:
     - ./data/proxy.conf:/etc/nginx/conf.d/proxy.conf:ro
