@@ -1,0 +1,9 @@
+app:
+  image: nginx
+  container_name: proxy
+  ports:
+    - 80:80
+  external_links:
+    - storage
+  volumes:
+    - ./data/proxy.conf:/etc/nginx/conf.d/proxy.conf:ro

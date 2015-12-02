@@ -1,0 +1,8 @@
+app:
+  image: nginx
+  container_name: storage
+  ports:
+    - 50000:80
+  volumes:
+    - ./data/conf/storage.conf:/etc/nginx/conf.d/storage.conf:ro
+    - ./data/storage:/var/www/html/storage/
